@@ -6,6 +6,7 @@ USE MERAKI_Academy_Project_6;
 
 
 
+
 CREATE TABLE roles (
 id INT AUTO_INCREMENT NOT NULL,
 role_name VARCHAR(255) NOT NULL,
