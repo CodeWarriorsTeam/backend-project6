@@ -24,7 +24,11 @@ app.use("/roles", roleRouter);
 const userRouter = require("./routes/users");
 app.use("/users", userRouter);
 
-const PORT = 5000;
+app.get("/test", (req, res) =>
+  res.json("server is running :)))))))))))))))))))))))))))")
+);
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`SERVER WORKING ON PORT: ${PORT}`);
