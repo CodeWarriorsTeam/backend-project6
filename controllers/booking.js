@@ -2,7 +2,7 @@ const connection = require("../database/db");
 const createNewBooking = (req, res) => {
   const { reserver, booking_day, date_booking, booking_time, phone, Payment } =
     req.body;
-
+//
   const halls_id = [req.params.halls_id];
 
   const query = `INSERT INTO booking (reserver,booking_day,date_booking,booking_time,phone,Payment,halls_id) VALUES (?,?,?,?,?,?,?)`;
